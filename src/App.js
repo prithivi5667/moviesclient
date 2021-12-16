@@ -28,7 +28,7 @@ class App extends React.Component {
   }
 
   componentDidMount(){
-    fetch('http://localhost:3001/api/signedin', {
+    fetch('https://newservermovie.herokuapp.com/api/signedin', {
       method: 'GET',
       headers: {
         'Accept': 'application/json',
