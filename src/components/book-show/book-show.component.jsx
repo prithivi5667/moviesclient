@@ -8,9 +8,11 @@ const BookShow = ({ match }) => {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',"Access-Control-Allow-Headers" : "Content-Type",
+            "Access-Control-Allow-Origin": "https://www.example.com",
+            "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
         },
-        credentials: 'include',
+        credentials:true,
         body: JSON.stringify({bookingDetails: match.params.imdbID + '/' + match.params.date + '/' + match.params.show + '/'})
     })
     .then(res => res.json())
