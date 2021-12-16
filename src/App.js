@@ -34,6 +34,7 @@ class App extends React.Component {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
         "Access-Control-Allow-Headers" : "Content-Type",
+        "Access-Control-Allow-Credentials": true,
         "Access-Control-Allow-Origin": "https://newservermovie.herokuapp.com",
         "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
       },
