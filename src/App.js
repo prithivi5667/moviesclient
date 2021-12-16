@@ -37,7 +37,7 @@ class App extends React.Component {
         "Access-Control-Allow-Origin": "https://newservermovie.herokuapp.com",
         "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
       },
-      credentials: 'include'
+      credentials:true
     })
     .then(res => res.json())
     .then(json => {
