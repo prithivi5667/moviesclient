@@ -23,7 +23,9 @@ class SignUp extends React.Component {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'Access-Control-Request-Method': 'POST',
+                    'Access-Control-Request-Headers': 'Content-Type'
                 },
                 credentials: 'include',
                 body: JSON.stringify(this.state)
