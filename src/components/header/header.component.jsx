@@ -4,20 +4,20 @@ import './header.styles.scss';
 
 const Header = (props) => {
     function handleLogout() {
-        fetch('http://localhost:3001/api/logout', {
+        fetch('https://newservermovie.herokuapp.com/api/logout', {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
                 "Access-Control-Allow-Headers" : "Content-Type",
-            "Access-Control-Allow-Origin": "https://www.example.com",
+            "Access-Control-Allow-Origin": "https://newservermovie.herokuapp.com",
             "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
             },
             credentials: true
         })
         .then(res => {
             alert("You have logged out of your account!");
-            window.location.replace("http://localhost:3000");
+            window.location.replace("https://moviesclient.netlify.app");
         })
         .catch(err => console.log(err));
     }

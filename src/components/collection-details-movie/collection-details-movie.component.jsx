@@ -15,12 +15,12 @@ class CollectionDetailsMovie extends React.Component {
     }
 
     componentDidMount(){
-        fetch('http://localhost:3001/api/signedin', {
+        fetch('https://newservermovie.herokuapp.com/api/signedin', {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',"Access-Control-Allow-Headers" : "Content-Type",
-                "Access-Control-Allow-Origin": "https://www.example.com",
+                "Access-Control-Allow-Origin": "https://newservermovie.herokuapp.com",
                 "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
             },
             credentials: true
